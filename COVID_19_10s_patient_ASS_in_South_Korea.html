@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ba6c897a4f4e40a69f40f8940b6a723c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_ba6c897a4f4e40a69f40f8940b6a723c" ></div>
+        
+</body>
+<script>    
+    
+            var map_ba6c897a4f4e40a69f40f8940b6a723c = L.map(
+                "map_ba6c897a4f4e40a69f40f8940b6a723c",
+                {
+                    center: [36.55, 126.983333],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                    titles: "loation of 10s patient in South Korea after starting school",
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_857b22c3b3864adba0a3d3f296295e91 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_ba6c897a4f4e40a69f40f8940b6a723c);
+        
+    
+            var circle_marker_aa738cded35b4076bf366f47556feb7f = L.circleMarker(
+                [37.46019, 126.4407],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ba6c897a4f4e40a69f40f8940b6a723c);
+        
+    
+        var popup_0c71d0b6673e43b2a1306263a1d819d1 = L.popup({"maxWidth": 250});
+
+        
+            var html_da4ed5f14773456ab1339307a56a9a96 = $(`<div id="html_da4ed5f14773456ab1339307a56a9a96" style="width: 100.0%; height: 100.0%;"><b>Province: </b>Incheon<br><b>City: </b>Jung-gu<br><b>type: </b>airport<br></div>`)[0];
+            popup_0c71d0b6673e43b2a1306263a1d819d1.setContent(html_da4ed5f14773456ab1339307a56a9a96);
+        
+
+        circle_marker_aa738cded35b4076bf366f47556feb7f.bindPopup(popup_0c71d0b6673e43b2a1306263a1d819d1)
+        ;
+
+        
+    
+    
+            var circle_marker_954faa7d92f94a17a340534290c19ec6 = L.circleMarker(
+                [37.51754, 126.8659],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ba6c897a4f4e40a69f40f8940b6a723c);
+        
+    
+        var popup_9ced46043a904cd8b4403ec2471fd703 = L.popup({"maxWidth": 250});
+
+        
+            var html_8a50f9fc06c64db5aa38eb6a58625ab9 = $(`<div id="html_8a50f9fc06c64db5aa38eb6a58625ab9" style="width: 100.0%; height: 100.0%;"><b>Province: </b>Seoul<br><b>City: </b>Yangcheon-gu<br><b>type: </b>hospital<br></div>`)[0];
+            popup_9ced46043a904cd8b4403ec2471fd703.setContent(html_8a50f9fc06c64db5aa38eb6a58625ab9);
+        
+
+        circle_marker_954faa7d92f94a17a340534290c19ec6.bindPopup(popup_9ced46043a904cd8b4403ec2471fd703)
+        ;
+
+        
+    
+    
+            var circle_marker_a48083e045f44a16830228430a44a542 = L.circleMarker(
+                [37.51241, 126.8331],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ba6c897a4f4e40a69f40f8940b6a723c);
+        
+    
+        var popup_4a622008e3b94b67b6993c24c30762f0 = L.popup({"maxWidth": 250});
+
+        
+            var html_30b280249a254b9981e49204a7c1b878 = $(`<div id="html_30b280249a254b9981e49204a7c1b878" style="width: 100.0%; height: 100.0%;"><b>Province: </b>Seoul<br><b>City: </b>Yangcheon-gu<br><b>type: </b>hospital<br></div>`)[0];
+            popup_4a622008e3b94b67b6993c24c30762f0.setContent(html_30b280249a254b9981e49204a7c1b878);
+        
+
+        circle_marker_a48083e045f44a16830228430a44a542.bindPopup(popup_4a622008e3b94b67b6993c24c30762f0)
+        ;
+
+        
+    
+    
+            var circle_marker_4d0712e2c6264efebb7bb3dcf8c6141e = L.circleMarker(
+                [35.22122, 129.093],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ba6c897a4f4e40a69f40f8940b6a723c);
+        
+    
+        var popup_f91cd744e5b347fca56eec7b76ed529b = L.popup({"maxWidth": 250});
+
+        
+            var html_ae6dd92040ac44db8ff3963947eb4b5b = $(`<div id="html_ae6dd92040ac44db8ff3963947eb4b5b" style="width: 100.0%; height: 100.0%;"><b>Province: </b>Busan<br><b>City: </b>Geumjeong-gu<br><b>type: </b>school<br></div>`)[0];
+            popup_f91cd744e5b347fca56eec7b76ed529b.setContent(html_ae6dd92040ac44db8ff3963947eb4b5b);
+        
+
+        circle_marker_4d0712e2c6264efebb7bb3dcf8c6141e.bindPopup(popup_f91cd744e5b347fca56eec7b76ed529b)
+        ;
+
+        
+    
+    
+            var circle_marker_132e89a9cf6945cd896fa14f84bee3f2 = L.circleMarker(
+                [35.20479, 129.0822],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ba6c897a4f4e40a69f40f8940b6a723c);
+        
+    
+        var popup_1da1d6b7c61d40c28df76716c5685376 = L.popup({"maxWidth": 250});
+
+        
+            var html_4e1d58c6336e401590dfcb46283e67eb = $(`<div id="html_4e1d58c6336e401590dfcb46283e67eb" style="width: 100.0%; height: 100.0%;"><b>Province: </b>Busan<br><b>City: </b>Dongnae-gu<br><b>type: </b>pc_cafe<br></div>`)[0];
+            popup_1da1d6b7c61d40c28df76716c5685376.setContent(html_4e1d58c6336e401590dfcb46283e67eb);
+        
+
+        circle_marker_132e89a9cf6945cd896fa14f84bee3f2.bindPopup(popup_1da1d6b7c61d40c28df76716c5685376)
+        ;
+
+        
+    
+    
+            var circle_marker_c131e7dd3728470b95622d7297a3debd = L.circleMarker(
+                [35.22122, 129.093],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ba6c897a4f4e40a69f40f8940b6a723c);
+        
+    
+        var popup_2188e4a890144470b167db0e42b12431 = L.popup({"maxWidth": 250});
+
+        
+            var html_23b93560af574bb099c3898496298db3 = $(`<div id="html_23b93560af574bb099c3898496298db3" style="width: 100.0%; height: 100.0%;"><b>Province: </b>Busan<br><b>City: </b>Geumjeong-gu<br><b>type: </b>school<br></div>`)[0];
+            popup_2188e4a890144470b167db0e42b12431.setContent(html_23b93560af574bb099c3898496298db3);
+        
+
+        circle_marker_c131e7dd3728470b95622d7297a3debd.bindPopup(popup_2188e4a890144470b167db0e42b12431)
+        ;
+
+        
+    
+    
+            var circle_marker_73b168696bf8450a9514138ade3966c5 = L.circleMarker(
+                [35.20479, 129.0822],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ba6c897a4f4e40a69f40f8940b6a723c);
+        
+    
+        var popup_0c1051a916154953a590e18340a0b839 = L.popup({"maxWidth": 250});
+
+        
+            var html_f1b1d272d19849b18f770c7cc0dad478 = $(`<div id="html_f1b1d272d19849b18f770c7cc0dad478" style="width: 100.0%; height: 100.0%;"><b>Province: </b>Busan<br><b>City: </b>Dongnae-gu<br><b>type: </b>pc_cafe<br></div>`)[0];
+            popup_0c1051a916154953a590e18340a0b839.setContent(html_f1b1d272d19849b18f770c7cc0dad478);
+        
+
+        circle_marker_73b168696bf8450a9514138ade3966c5.bindPopup(popup_0c1051a916154953a590e18340a0b839)
+        ;
+
+        
+    
+    
+            var circle_marker_1a63aa4949654f86865f04d3bd6e60db = L.circleMarker(
+                [35.23045, 129.0877],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ba6c897a4f4e40a69f40f8940b6a723c);
+        
+    
+        var popup_da18bcc405424dbcbb586e52dc9f3ed4 = L.popup({"maxWidth": 250});
+
+        
+            var html_8c0fdc6f3a9f4aaf94b5b5ebd2eea46d = $(`<div id="html_8c0fdc6f3a9f4aaf94b5b5ebd2eea46d" style="width: 100.0%; height: 100.0%;"><b>Province: </b>Busan<br><b>City: </b>Geumjeong-gu<br><b>type: </b>etc<br></div>`)[0];
+            popup_da18bcc405424dbcbb586e52dc9f3ed4.setContent(html_8c0fdc6f3a9f4aaf94b5b5ebd2eea46d);
+        
+
+        circle_marker_1a63aa4949654f86865f04d3bd6e60db.bindPopup(popup_da18bcc405424dbcbb586e52dc9f3ed4)
+        ;
+
+        
+    
+    
+            var circle_marker_d89831416d3f4cd0886254b7ea325862 = L.circleMarker(
+                [35.14915, 129.1141],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ba6c897a4f4e40a69f40f8940b6a723c);
+        
+    
+        var popup_5a0625122aae408788db4557e6c5bba7 = L.popup({"maxWidth": 250});
+
+        
+            var html_93f053a8ebfb488480f9353bcc338d87 = $(`<div id="html_93f053a8ebfb488480f9353bcc338d87" style="width: 100.0%; height: 100.0%;"><b>Province: </b>Busan<br><b>City: </b>Suyeong-gu<br><b>type: </b>store<br></div>`)[0];
+            popup_5a0625122aae408788db4557e6c5bba7.setContent(html_93f053a8ebfb488480f9353bcc338d87);
+        
+
+        circle_marker_d89831416d3f4cd0886254b7ea325862.bindPopup(popup_5a0625122aae408788db4557e6c5bba7)
+        ;
+
+        
+    
+    
+            var circle_marker_7798e08978c348babbd5cadd2c6fefd7 = L.circleMarker(
+                [35.21138, 129.0799],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ba6c897a4f4e40a69f40f8940b6a723c);
+        
+    
+        var popup_98e5c453dcfe40d7912e5a30231f350b = L.popup({"maxWidth": 250});
+
+        
+            var html_54567e6c4fd54c3ca2cd8ec1673de9ea = $(`<div id="html_54567e6c4fd54c3ca2cd8ec1673de9ea" style="width: 100.0%; height: 100.0%;"><b>Province: </b>Busan<br><b>City: </b>Dongnae-gu<br><b>type: </b>hospital<br></div>`)[0];
+            popup_98e5c453dcfe40d7912e5a30231f350b.setContent(html_54567e6c4fd54c3ca2cd8ec1673de9ea);
+        
+
+        circle_marker_7798e08978c348babbd5cadd2c6fefd7.bindPopup(popup_98e5c453dcfe40d7912e5a30231f350b)
+        ;
+
+        
+    
+    
+            var circle_marker_c5fb347688c040909d026f86a0714ce6 = L.circleMarker(
+                [35.20479, 129.0822],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ba6c897a4f4e40a69f40f8940b6a723c);
+        
+    
+        var popup_53b85f8d960d4870a062adb5dee3fbd3 = L.popup({"maxWidth": 250});
+
+        
+            var html_2f81ee095f0e4f6190b6c19d33445d25 = $(`<div id="html_2f81ee095f0e4f6190b6c19d33445d25" style="width: 100.0%; height: 100.0%;"><b>Province: </b>Busan<br><b>City: </b>Dongnae-gu<br><b>type: </b>pc_cafe<br></div>`)[0];
+            popup_53b85f8d960d4870a062adb5dee3fbd3.setContent(html_2f81ee095f0e4f6190b6c19d33445d25);
+        
+
+        circle_marker_c5fb347688c040909d026f86a0714ce6.bindPopup(popup_53b85f8d960d4870a062adb5dee3fbd3)
+        ;
+
+        
+    
+    
+            var circle_marker_444e9af3c3a84c899e012d18152b5844 = L.circleMarker(
+                [35.82973, 128.5326],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ba6c897a4f4e40a69f40f8940b6a723c);
+        
+    
+        var popup_f5efc02594aa424f9add5f9d4d402542 = L.popup({"maxWidth": 250});
+
+        
+            var html_e67475474f3c456b87dc3ddc174f0666 = $(`<div id="html_e67475474f3c456b87dc3ddc174f0666" style="width: 100.0%; height: 100.0%;"><b>Province: </b>Daegu<br><b>City: </b>Dalseo-gu<br><b>type: </b>hospital<br></div>`)[0];
+            popup_f5efc02594aa424f9add5f9d4d402542.setContent(html_e67475474f3c456b87dc3ddc174f0666);
+        
+
+        circle_marker_444e9af3c3a84c899e012d18152b5844.bindPopup(popup_f5efc02594aa424f9add5f9d4d402542)
+        ;
+
+        
+    
+    
+            var circle_marker_a7c8165cc7964359b633f579c58d9a4e = L.circleMarker(
+                [35.86862, 128.5829],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ba6c897a4f4e40a69f40f8940b6a723c);
+        
+    
+        var popup_f11f1d9608064bec898ad0be3714ba1e = L.popup({"maxWidth": 250});
+
+        
+            var html_15703c4bd71b43f4926102d2e3e407a2 = $(`<div id="html_15703c4bd71b43f4926102d2e3e407a2" style="width: 100.0%; height: 100.0%;"><b>Province: </b>Daegu<br><b>City: </b>Jung-gu<br><b>type: </b>hospital<br></div>`)[0];
+            popup_f11f1d9608064bec898ad0be3714ba1e.setContent(html_15703c4bd71b43f4926102d2e3e407a2);
+        
+
+        circle_marker_a7c8165cc7964359b633f579c58d9a4e.bindPopup(popup_f11f1d9608064bec898ad0be3714ba1e)
+        ;
+
+        
+    
+    
+            var circle_marker_18aadd66bbe9472989d20d5ef46aefff = L.circleMarker(
+                [36.31625, 127.4474],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ba6c897a4f4e40a69f40f8940b6a723c);
+        
+    
+        var popup_1d0efea0a7624a6985979f1c48a338aa = L.popup({"maxWidth": 250});
+
+        
+            var html_394f3a9f8cc54fcd8e0e3c97587a1328 = $(`<div id="html_394f3a9f8cc54fcd8e0e3c97587a1328" style="width: 100.0%; height: 100.0%;"><b>Province: </b>Daejeon<br><b>City: </b>Dong-gu<br><b>type: </b>store<br></div>`)[0];
+            popup_1d0efea0a7624a6985979f1c48a338aa.setContent(html_394f3a9f8cc54fcd8e0e3c97587a1328);
+        
+
+        circle_marker_18aadd66bbe9472989d20d5ef46aefff.bindPopup(popup_1d0efea0a7624a6985979f1c48a338aa)
+        ;
+
+        
+    
+    
+            var circle_marker_b919268ec7e94c2099ff3eb38d2dfe46 = L.circleMarker(
+                [35.8881, 128.6512],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ba6c897a4f4e40a69f40f8940b6a723c);
+        
+    
+        var popup_27dc043a05c54bfe8e25c85d3900fc28 = L.popup({"maxWidth": 250});
+
+        
+            var html_90916f76985b4fbe82de5f2484051524 = $(`<div id="html_90916f76985b4fbe82de5f2484051524" style="width: 100.0%; height: 100.0%;"><b>Province: </b>Daegu<br><b>City: </b>Dong-gu<br><b>type: </b>hospital<br></div>`)[0];
+            popup_27dc043a05c54bfe8e25c85d3900fc28.setContent(html_90916f76985b4fbe82de5f2484051524);
+        
+
+        circle_marker_b919268ec7e94c2099ff3eb38d2dfe46.bindPopup(popup_27dc043a05c54bfe8e25c85d3900fc28)
+        ;
+
+        
+    
+    
+            var circle_marker_e8df2a30199d4a2bb5fe23ea4fbae6b1 = L.circleMarker(
+                [36.31695, 127.4157],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ba6c897a4f4e40a69f40f8940b6a723c);
+        
+    
+        var popup_d9c968f29ae24ac483c52f631dfdadd6 = L.popup({"maxWidth": 250});
+
+        
+            var html_80e79eb59680489a84c044be37aeff30 = $(`<div id="html_80e79eb59680489a84c044be37aeff30" style="width: 100.0%; height: 100.0%;"><b>Province: </b>Daejeon<br><b>City: </b>Jung-gu<br><b>type: </b>hospital<br></div>`)[0];
+            popup_d9c968f29ae24ac483c52f631dfdadd6.setContent(html_80e79eb59680489a84c044be37aeff30);
+        
+
+        circle_marker_e8df2a30199d4a2bb5fe23ea4fbae6b1.bindPopup(popup_d9c968f29ae24ac483c52f631dfdadd6)
+        ;
+
+        
+    
+    
+            var circle_marker_e30dcd6b2d6444d0bff6f760900acf0c = L.circleMarker(
+                [36.31588, 127.4449],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ba6c897a4f4e40a69f40f8940b6a723c);
+        
+    
+        var popup_a595108dd3e64096b823ef920bf6cd83 = L.popup({"maxWidth": 250});
+
+        
+            var html_a0e2d4f2b6cf4ec2b884b9f0fad7c17b = $(`<div id="html_a0e2d4f2b6cf4ec2b884b9f0fad7c17b" style="width: 100.0%; height: 100.0%;"><b>Province: </b>Daejeon<br><b>City: </b>Dong-gu<br><b>type: </b>school<br></div>`)[0];
+            popup_a595108dd3e64096b823ef920bf6cd83.setContent(html_a0e2d4f2b6cf4ec2b884b9f0fad7c17b);
+        
+
+        circle_marker_e30dcd6b2d6444d0bff6f760900acf0c.bindPopup(popup_a595108dd3e64096b823ef920bf6cd83)
+        ;
+
+        
+    
+    
+            var circle_marker_730b37c2478042d68003b0e5828d29ba = L.circleMarker(
+                [36.30798, 127.4582],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ba6c897a4f4e40a69f40f8940b6a723c);
+        
+    
+        var popup_88934558def4468bad9b4913cb7c77dd = L.popup({"maxWidth": 250});
+
+        
+            var html_c93f6f0f8ca4443384d4edacadb5995b = $(`<div id="html_c93f6f0f8ca4443384d4edacadb5995b" style="width: 100.0%; height: 100.0%;"><b>Province: </b>Daejeon<br><b>City: </b>Dong-gu<br><b>type: </b>academy<br></div>`)[0];
+            popup_88934558def4468bad9b4913cb7c77dd.setContent(html_c93f6f0f8ca4443384d4edacadb5995b);
+        
+
+        circle_marker_730b37c2478042d68003b0e5828d29ba.bindPopup(popup_88934558def4468bad9b4913cb7c77dd)
+        ;
+
+        
+    
+    
+            var circle_marker_ed197dbbbb6d4075ae85974da37f8589 = L.circleMarker(
+                [36.31731, 127.4441],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ba6c897a4f4e40a69f40f8940b6a723c);
+        
+    
+        var popup_b1cfb2a9cddf4b43971b9038e2ddce05 = L.popup({"maxWidth": 250});
+
+        
+            var html_3107bfbadbb14553a8fee48b869258fc = $(`<div id="html_3107bfbadbb14553a8fee48b869258fc" style="width: 100.0%; height: 100.0%;"><b>Province: </b>Daejeon<br><b>City: </b>Dong-gu<br><b>type: </b>etc<br></div>`)[0];
+            popup_b1cfb2a9cddf4b43971b9038e2ddce05.setContent(html_3107bfbadbb14553a8fee48b869258fc);
+        
+
+        circle_marker_ed197dbbbb6d4075ae85974da37f8589.bindPopup(popup_b1cfb2a9cddf4b43971b9038e2ddce05)
+        ;
+
+        
+    
+    
+            var circle_marker_4da7b8b0e8ef49ac8dcf7f41b53f935a = L.circleMarker(
+                [36.31588, 127.4449],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ba6c897a4f4e40a69f40f8940b6a723c);
+        
+    
+        var popup_1053d9c97bc842beaa23caebf96487e7 = L.popup({"maxWidth": 250});
+
+        
+            var html_24f7065c92004e6cbb4c4066211a41b2 = $(`<div id="html_24f7065c92004e6cbb4c4066211a41b2" style="width: 100.0%; height: 100.0%;"><b>Province: </b>Daejeon<br><b>City: </b>Dong-gu<br><b>type: </b>school<br></div>`)[0];
+            popup_1053d9c97bc842beaa23caebf96487e7.setContent(html_24f7065c92004e6cbb4c4066211a41b2);
+        
+
+        circle_marker_4da7b8b0e8ef49ac8dcf7f41b53f935a.bindPopup(popup_1053d9c97bc842beaa23caebf96487e7)
+        ;
+
+        
+    
+    
+            var circle_marker_469428b8871845bea0b8aa24ac021e22 = L.circleMarker(
+                [36.3138, 127.4461],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ba6c897a4f4e40a69f40f8940b6a723c);
+        
+    
+        var popup_47192465bd1346c7b2c170b14badda29 = L.popup({"maxWidth": 250});
+
+        
+            var html_26ca51daca7b4e4bb7b1bc24b8915e76 = $(`<div id="html_26ca51daca7b4e4bb7b1bc24b8915e76" style="width: 100.0%; height: 100.0%;"><b>Province: </b>Daejeon<br><b>City: </b>Dong-gu<br><b>type: </b>etc<br></div>`)[0];
+            popup_47192465bd1346c7b2c170b14badda29.setContent(html_26ca51daca7b4e4bb7b1bc24b8915e76);
+        
+
+        circle_marker_469428b8871845bea0b8aa24ac021e22.bindPopup(popup_47192465bd1346c7b2c170b14badda29)
+        ;
+
+        
+    
+    
+            var circle_marker_bff43dbf479d4e6384bd431f2290ae47 = L.circleMarker(
+                [36.31731, 127.4441],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ba6c897a4f4e40a69f40f8940b6a723c);
+        
+    
+        var popup_33802f6bd7b74df79a42b8bc2798f7b1 = L.popup({"maxWidth": 250});
+
+        
+            var html_fe325fa21bce4329a10ad022de5e0900 = $(`<div id="html_fe325fa21bce4329a10ad022de5e0900" style="width: 100.0%; height: 100.0%;"><b>Province: </b>Daejeon<br><b>City: </b>Dong-gu<br><b>type: </b>etc<br></div>`)[0];
+            popup_33802f6bd7b74df79a42b8bc2798f7b1.setContent(html_fe325fa21bce4329a10ad022de5e0900);
+        
+
+        circle_marker_bff43dbf479d4e6384bd431f2290ae47.bindPopup(popup_33802f6bd7b74df79a42b8bc2798f7b1)
+        ;
+
+        
+    
+    
+            var circle_marker_af5175cd16fc4dd7824f01bc3382d03d = L.circleMarker(
+                [36.31661, 127.4567],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ba6c897a4f4e40a69f40f8940b6a723c);
+        
+    
+        var popup_29ec2de2b6f4483fa8106d31d4c127be = L.popup({"maxWidth": 250});
+
+        
+            var html_252e3ecdadc4407699c0a57db92cad16 = $(`<div id="html_252e3ecdadc4407699c0a57db92cad16" style="width: 100.0%; height: 100.0%;"><b>Province: </b>Daejeon<br><b>City: </b>Dong-gu<br><b>type: </b>hospital<br></div>`)[0];
+            popup_29ec2de2b6f4483fa8106d31d4c127be.setContent(html_252e3ecdadc4407699c0a57db92cad16);
+        
+
+        circle_marker_af5175cd16fc4dd7824f01bc3382d03d.bindPopup(popup_29ec2de2b6f4483fa8106d31d4c127be)
+        ;
+
+        
+    
+    
+            var circle_marker_c656506fdba64a189670fc3b2b2fd862 = L.circleMarker(
+                [35.8881, 128.6512],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ba6c897a4f4e40a69f40f8940b6a723c);
+        
+    
+        var popup_d885efe9932646ccabc7addfba8b2c05 = L.popup({"maxWidth": 250});
+
+        
+            var html_ecb32e2ed8fe4db1907ebbd2c37c9a8e = $(`<div id="html_ecb32e2ed8fe4db1907ebbd2c37c9a8e" style="width: 100.0%; height: 100.0%;"><b>Province: </b>Daegu<br><b>City: </b>Dong-gu<br><b>type: </b>hospital<br></div>`)[0];
+            popup_d885efe9932646ccabc7addfba8b2c05.setContent(html_ecb32e2ed8fe4db1907ebbd2c37c9a8e);
+        
+
+        circle_marker_c656506fdba64a189670fc3b2b2fd862.bindPopup(popup_d885efe9932646ccabc7addfba8b2c05)
+        ;
+
+        
+    
+    
+            var circle_marker_a7a73c562862448690d29c86fcd8436e = L.circleMarker(
+                [36.31695, 127.4157],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ba6c897a4f4e40a69f40f8940b6a723c);
+        
+    
+        var popup_ba61842bd3864a8b9af464c075e483db = L.popup({"maxWidth": 250});
+
+        
+            var html_40edc41d230e4c2ea11bdf0cd286800a = $(`<div id="html_40edc41d230e4c2ea11bdf0cd286800a" style="width: 100.0%; height: 100.0%;"><b>Province: </b>Daejeon<br><b>City: </b>Jung-gu<br><b>type: </b>hospital<br></div>`)[0];
+            popup_ba61842bd3864a8b9af464c075e483db.setContent(html_40edc41d230e4c2ea11bdf0cd286800a);
+        
+
+        circle_marker_a7a73c562862448690d29c86fcd8436e.bindPopup(popup_ba61842bd3864a8b9af464c075e483db)
+        ;
+
+        
+    
+    
+            var circle_marker_a4d500a336904afb9b7cb4a8359be6b1 = L.circleMarker(
+                [36.32042, 127.4434],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ba6c897a4f4e40a69f40f8940b6a723c);
+        
+    
+        var popup_1d4d48ce4a2a479eae64b5920a0e7288 = L.popup({"maxWidth": 250});
+
+        
+            var html_9fff50e8dcd843a3b3ce8e67292d29e4 = $(`<div id="html_9fff50e8dcd843a3b3ce8e67292d29e4" style="width: 100.0%; height: 100.0%;"><b>Province: </b>Daejeon<br><b>City: </b>Dong-gu<br><b>type: </b>store<br></div>`)[0];
+            popup_1d4d48ce4a2a479eae64b5920a0e7288.setContent(html_9fff50e8dcd843a3b3ce8e67292d29e4);
+        
+
+        circle_marker_a4d500a336904afb9b7cb4a8359be6b1.bindPopup(popup_1d4d48ce4a2a479eae64b5920a0e7288)
+        ;
+
+        
+    
+    
+            var circle_marker_87bf7bdd34bf406da70a2b0c35a68b4a = L.circleMarker(
+                [35.8881, 128.6512],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ba6c897a4f4e40a69f40f8940b6a723c);
+        
+    
+        var popup_441bf0b6293f45139e0b4e4d872701d2 = L.popup({"maxWidth": 250});
+
+        
+            var html_921df38da52e4295b509573dfa2dc3f5 = $(`<div id="html_921df38da52e4295b509573dfa2dc3f5" style="width: 100.0%; height: 100.0%;"><b>Province: </b>Daegu<br><b>City: </b>Dong-gu<br><b>type: </b>hospital<br></div>`)[0];
+            popup_441bf0b6293f45139e0b4e4d872701d2.setContent(html_921df38da52e4295b509573dfa2dc3f5);
+        
+
+        circle_marker_87bf7bdd34bf406da70a2b0c35a68b4a.bindPopup(popup_441bf0b6293f45139e0b4e4d872701d2)
+        ;
+
+        
+    
+    
+            var circle_marker_b7a1a387f6e74025a45fef6e024230c9 = L.circleMarker(
+                [35.8881, 128.6512],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ba6c897a4f4e40a69f40f8940b6a723c);
+        
+    
+        var popup_8f3025554fa2417bb71f72dbe58b54c1 = L.popup({"maxWidth": 250});
+
+        
+            var html_197fec3499e8466cb96033baff00ce64 = $(`<div id="html_197fec3499e8466cb96033baff00ce64" style="width: 100.0%; height: 100.0%;"><b>Province: </b>Daegu<br><b>City: </b>Dong-gu<br><b>type: </b>hospital<br></div>`)[0];
+            popup_8f3025554fa2417bb71f72dbe58b54c1.setContent(html_197fec3499e8466cb96033baff00ce64);
+        
+
+        circle_marker_b7a1a387f6e74025a45fef6e024230c9.bindPopup(popup_8f3025554fa2417bb71f72dbe58b54c1)
+        ;
+
+        
+    
+</script>
